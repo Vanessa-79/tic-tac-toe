@@ -27,7 +27,7 @@ class Board
   end
 
   def check_winner(player)
-    # checking for winner by checking rows, columns, and diagonals
+    # checking for winner by checking rows, columns
     # checking rows
     @board.each do |row|
       return true if row.all? { |cell| cell == player.symbol }
